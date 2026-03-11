@@ -133,7 +133,8 @@ class OpenAIClient(AIClient):
                 {"role": "user", "content": user}
             ],
             temperature=temperature,
-            max_tokens=max_tokens
+            max_tokens=max_tokens,
+            response_format={"type": "json_object"}
         )
 
         return response.choices[0].message.content
@@ -181,7 +182,8 @@ class GeminiClient(AIClient):
             config=types.GenerateContentConfig(
                 system_instruction=system,
                 temperature=temperature,
-                max_output_tokens=max_tokens
+                max_output_tokens=max_tokens,
+                response_mime_type="application/json"
             )
         )
 
