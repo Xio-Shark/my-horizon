@@ -187,7 +187,8 @@ class ContentEnricher:
         # Combine structured sub-fields into per-language detailed_summary
         for lang in ("en", "zh"):
             if result.get(f"title_{lang}"):
-                item.metadata[f"title_{lang}"] = result[f"title_{lang}"]
+                val = result[f"title_{lang}"]
+                item.metadata[f"title_{lang}"] = val.get("text") or str(val) if isinstance(val, dict) else str(val)
 
             parts = []
             for field in ("whats_new", "why_it_matters", "key_details"):
@@ -198,10 +199,12 @@ class ContentEnricher:
                 item.metadata[f"detailed_summary_{lang}"] = " ".join(parts)
 
             if result.get(f"background_{lang}"):
-                item.metadata[f"background_{lang}"] = result[f"background_{lang}"]
+                val = result[f"background_{lang}"]
+                item.metadata[f"background_{lang}"] = val.get("text") or str(val) if isinstance(val, dict) else str(val)
 
             if result.get(f"community_discussion_{lang}"):
-                item.metadata[f"community_discussion_{lang}"] = result[f"community_discussion_{lang}"]
+                val = result[f"community_discussion_{lang}"]
+                item.metadata[f"community_discussion_{lang}"] = val.get("text") or str(val) if isinstance(val, dict) else str(val)
 
         # Store citation sources — only URLs that actually came from our search results
         if result.get("sources") and available_urls:

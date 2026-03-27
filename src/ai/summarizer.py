@@ -97,7 +97,8 @@ class DailySummarizer:
         # TOC
         toc_entries = []
         for i, item in enumerate(items):
-            t = (item.metadata.get(f"title_{language}") or item.title).replace("[", "(").replace("]", ")")
+            _t = item.metadata.get(f"title_{language}") or item.title
+            t = str(_t).replace("[", "(").replace("]", ")")
             if language == "zh":
                 t = _pangu(t)
             score = item.ai_score or "?"
@@ -110,10 +111,8 @@ class DailySummarizer:
 
     def _format_item(self, item: ContentItem, labels: dict, language: str, index: int) -> str:
         """Format a single ContentItem into Markdown."""
-        title = (
-            item.metadata.get(f"title_{language}")
-            or item.title
-        ).replace("[", "(").replace("]", ")")
+        _title = item.metadata.get(f"title_{language}") or item.title
+        title = str(_title).replace("[", "(").replace("]", ")")
         url = str(item.url)
         score = item.ai_score or "?"
         meta = item.metadata
