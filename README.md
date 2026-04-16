@@ -2,7 +2,7 @@
 
 # 🌅 Horizon
 
-**AI curates the tech news. You just read.**
+**Enjoy the News itself. Leave others to Horizon**
 
 [![Python](https://img.shields.io/badge/python-3.11+-blue.svg?style=flat-square&logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](LICENSE)
@@ -52,6 +52,8 @@ Horizon collects news from multiple customizable sources, uses AI to score and f
 
 ## Features
 
+> **🤝 Beyond a Cold AI Agent:** Designed with a "human touch". Build your personalized newsroom by deeply customizing feeds and sharing high-quality information sources via the [Preset Library](https://thysrael.github.io/Horizon/presets).
+
 - **📡 Multi-Source Aggregation** — Collects from Hacker News, RSS feeds, Reddit, Telegram channels, and GitHub (releases & user events)
 - **🤖 AI-Powered Scoring** — Uses Claude, GPT-4, Gemini, DeepSeek, Doubao, MiniMax, or any OpenAI-compatible API to rate each item 0-10, filtering out the noise
 - **🌐 Bilingual Summaries** — Generates daily reports in both English and Chinese
@@ -61,7 +63,7 @@ Horizon collects news from multiple customizable sources, uses AI to score and f
 - **📧 Email Subscription** — Self-hosted newsletter system (SMTP/IMAP) that handles "Subscribe" requests automatically
 - **📝 Static Site Generation** — Deploys as a GitHub Pages site via GitHub Actions, updated on a schedule
 - **⚙️ Fully Configurable** — Single JSON config file, easy to customize sources, thresholds, and AI providers
-- **🧙 Setup Wizard** — Interactive CLI that recommends sources based on your interests, with a [curated preset library](https://thysrael.github.io/Horizon/presets) open to community contributions
+- **🧙 Setup Wizard** — Interactive CLI that recommends sources based on your interests.
 
 ## How It Works
 
