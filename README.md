@@ -43,7 +43,7 @@
 </table>
 
 <details>
-<summary><strong>Terminal Output</strong></summary>
+<summary><strong>More Screenshots</strong></summary>
 <br>
 <table>
 <tr>

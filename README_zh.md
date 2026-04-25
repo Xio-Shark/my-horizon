@@ -43,7 +43,7 @@
 </table>
 
 <details>
-<summary><strong>终端输出</strong></summary>
+<summary><strong>More Screenshots</strong></summary>
 <br>
 <table>
 <tr>
