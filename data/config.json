@@ -104,6 +104,10 @@
   "webhook": {
     "enabled": true,
     "url_env": "HORIZON_WEBHOOK_URL",
+    "delivery": "summary_and_items",
+    "languages": [
+      "zh"
+    ],
     "request_body": {
       "msg_type": "interactive",
       "card": {
@@ -114,19 +118,12 @@
         "header": {
           "title": {
             "tag": "plain_text",
-            "content": "Horizon #{date} 日报"
+            "content": "#{message_title}"
           },
           "template": "blue"
         },
         "body": {
           "elements": [
-            {
-              "tag": "markdown",
-              "content": "Horizon生成结果: #{result}\n重要资讯数量: #{important_items}/#{all_items}"
-            },
-            {
-              "tag": "hr"
-            },
             {
               "tag": "markdown",
               "content": "#{summary}"

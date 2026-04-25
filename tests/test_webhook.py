@@ -621,6 +621,10 @@ class TestWebhookConfigModel:
             url_env="HORIZON_WEBHOOK_URL",
             request_body='{"msg_type":"post"}',
             headers="Authorization: Bearer xxx",
+            delivery="summary_and_items",
+            languages=["zh"],
         )
         assert config.enabled is True
         assert config.url_env == "HORIZON_WEBHOOK_URL"
+        assert config.delivery == "summary_and_items"
+        assert config.languages == ["zh"]

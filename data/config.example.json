@@ -81,6 +81,8 @@
   "webhook": {
     "enabled": false,
     "url_env": "HORIZON_WEBHOOK_URL",
+    "delivery": "summary",
+    "languages": null,
     "request_body": {
       "msg_type": "interactive",
       "card": {
@@ -91,7 +93,7 @@
         "header": {
           "title": {
             "tag": "plain_text",
-            "content": "Horizon #{date}日报"
+            "content": "#{message_title}"
           },
           "template": "blue"
         },

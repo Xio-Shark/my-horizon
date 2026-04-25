@@ -139,6 +139,8 @@ class WebhookConfig(BaseModel):
     url_env: Optional[str] = None          # Environment variable name containing the webhook URL
     request_body: Optional[Union[str, dict, list]] = None  # POST body: real JSON object or string with #{key} placeholders; if empty, will use GET
     headers: Optional[str] = None          # Custom headers, "Key: Value" per line
+    delivery: str = "summary"             # summary, or summary_and_items
+    languages: Optional[List[str]] = None  # Optional language filter for webhook delivery; defaults to all AI languages
     enabled: bool = False
 
 
