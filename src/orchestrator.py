@@ -121,11 +121,7 @@ class HorizonOrchestrator:
                 summarizer = DailySummarizer()
                 summary = await summarizer.generate_summary(important_items, today, len(all_items), language=lang)
 
-                # Save to data/summaries/
-                summary_path = self.storage.save_daily_summary(today, summary, language=lang)
-                self.console.print(f"💾 Saved {lang.upper()} summary to: {summary_path}\n")
-
-                # Copy to docs/ for GitHub Pages
+                # Save to docs/ for GitHub Pages only (no local data/summaries/)
                 try:
                     from pathlib import Path
 

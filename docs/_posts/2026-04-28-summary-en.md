@@ -5,168 +5,166 @@ date: 2026-04-28
 lang: en
 ---
 
-> From 12 items, 7 important content pieces were selected
+> From 12 items, 8 important content pieces were selected
 
 ---
 
-1. [Microsoft and OpenAI end exclusive deal](#item-1) ⭐️ 9.0/10
-2. [4TB of Voice Samples and IDs Stolen from 40K Mercor Contractors](#item-2) ⭐️ 8.0/10
-3. [Interactive Color Perception Test Sparks Debate on Blue vs Green](#item-3) ⭐️ 8.0/10
-4. [Microsoft releases VibeVoice: open-source speech-to-text with speaker diarization](#item-4) ⭐️ 8.0/10
-5. [Talkie: 13B Language Model Trained on Pre-1931 Text](#item-5) ⭐️ 7.0/10
-6. [Three Men Charged in Toronto SMS Blaster Scam](#item-6) ⭐️ 7.0/10
-7. [Essay advocates staring at walls for mental downtime](#item-7) ⭐️ 7.0/10
+1. [Microsoft and OpenAI end exclusive deal, OpenAI free to use other clouds](#item-1) ⭐️ 10.0/10
+2. [Talkie: A 13B Language Model Trained on 1930s Text](#item-2) ⭐️ 8.0/10
+3. [Microsoft Releases Open-Source VibeVoice STT Model](#item-3) ⭐️ 8.0/10
+4. [Microsoft-OpenAI AGI Clause Officially Removed](#item-4) ⭐️ 8.0/10
+5. [Toronto SMS Blaster Arrests: 3 Men Face Charges](#item-5) ⭐️ 7.0/10
+6. [Website reveals differences in color perception](#item-6) ⭐️ 7.0/10
+7. [Men Who Stare at Walls: The Lost Art of Disattention](#item-7) ⭐️ 7.0/10
+8. [Easyduino: Open Source KiCad Devboard Templates](#item-8) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Microsoft and OpenAI end exclusive deal](https://www.bloomberg.com/news/articles/2026-04-27/microsoft-to-stop-sharing-revenue-with-main-ai-partner-openai) ⭐️ 9.0/10
+## [Microsoft and OpenAI end exclusive deal, OpenAI free to use other clouds](https://www.bloomberg.com/news/articles/2026-04-27/microsoft-to-stop-sharing-revenue-with-main-ai-partner-openai) ⭐️ 10.0/10
 
-Microsoft and OpenAI have mutually agreed to end their exclusive cloud and revenue-sharing partnership, allowing OpenAI to use alternative cloud providers such as AWS and potentially Google Cloud TPUs. This restructuring breaks the previous monopoly of Azure over OpenAI‘s compute, potentially reshaping the AI infrastructure landscape and intensifying competition among cloud providers for AI workloads. The previous agreement included a clause that would nullify Microsoft's commercial IP rights if AGI were achieved, which now appears to be removed. OpenAI can now negotiate better pricing and access to Google's eighth-generation TPUs (TPU 8t/8i) for training and inference.
+Microsoft and OpenAI have ended their exclusive cloud and revenue-sharing agreement, effective immediately, allowing OpenAI to use competing cloud providers such as AWS and Google Cloud for its AI infrastructure. This marks a major realignment in the AI industry, as OpenAI is no longer tied to Azure, potentially shifting the balance of power among cloud providers and enabling OpenAI to access more diverse hardware like Google's TPUs. The original agreement had given Microsoft exclusive rights to host OpenAI's models and a revenue share, but OpenAI's rapid growth and need for more compute capacity likely prompted the change.
 
 hackernews · helsinkiandrew · Apr 27, 13:22
 
-**Background**: Since 2019, Microsoft had exclusive rights to provide cloud infrastructure for OpenAI, with a revenue-sharing agreement. Google TPUs are custom ASICs designed for neural network training, and the latest generation targets agentic AI workloads. The deal change follows OpenAI's financial pressures and the rise of competitors like Anthropic.
+**Background**: Microsoft and OpenAI had a multi-billion-dollar partnership where Microsoft provided exclusive cloud computing via Azure and received a percentage of OpenAI's revenue. This deal helped OpenAI scale but limited its infrastructure choices. The end of exclusivity allows OpenAI to negotiate better terms and potentially use Google's TPUs or AWS's custom chips.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Tensor_Processing_Unit">Tensor Processing Unit - Wikipedia</a></li>
-<li><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/eighth-generation-tpu-agentic-era/">Our eighth generation TPUs: two chips for the agentic era</a></li>
+**Discussion**: Commenters debated the implications: some saw Google as the biggest winner due to its TPU advantage, while others interpreted the move as a sign of OpenAI's financial struggles. A former lawyer remarked that such restructuring indicates a 'cash-strapped scramble.' One user noted that despite the hype, even top AI models remain unreliable and require careful review.
 
-</ul>
-</details>
-
-**Discussion**: Commenters largely see Google as the biggest winner, as OpenAI may adopt TPUs. Some question why Microsoft accepted terms that seem favorable to OpenAI, speculating it was to protect its investment. Others note the removal of the AGI clause signals a more pragmatic relationship.
-
-**Tags**: `#AI`, `#OpenAI`, `#Microsoft`, `#cloud computing`, `#partnership`
+**Tags**: `#Microsoft`, `#OpenAI`, `#AI`, `#cloud computing`, `#partnership`
 
 ---
 
 <a id="item-2"></a>
-## [4TB of Voice Samples and IDs Stolen from 40K Mercor Contractors](https://app.oravys.com/blog/mercor-breach-2026) ⭐️ 8.0/10
+## [Talkie: A 13B Language Model Trained on 1930s Text](https://talkie-lm.com/introducing-talkie) ⭐️ 8.0/10
 
-A data breach at Mercor, an AI contractor platform, leaked 4TB of voice recordings and identification documents from approximately 40,000 contractors, enabling deepfake attacks. This breach combines biometric voice data with ID scans, creating a deepfake-ready kit that can bypass voice authentication systems used in banking, video calls, and insurance, posing long-term risks since biometrics cannot be changed. The leaked data includes voice samples paired with ID document scans, allowing attackers to create convincing deepfakes. The breach was claimed by the Lapsus$ hacking group and has led Meta to pause work with Mercor.
+Researchers have released Talkie, a 13-billion-parameter language model trained exclusively on 260 billion tokens of pre-1931 English text, capturing the language and knowledge of the 1930s. This project offers a unique historical lens, enabling studies of past language, beliefs, and worldviews, and opens up novel AI applications in historical research and education. Two versions are available on Hugging Face: a base model (53.1 GB) and an instruction-tuned variant (26.6 GB). The model performs well on recall of pre-1930 facts but struggles with events like the Great Depression, indicating its training data cutoff.
 
-hackernews · Oravys · Apr 27, 09:57
+hackernews · jekude · Apr 27, 21:55
 
-**Background**: Biometric data such as voice and fingerprints is increasingly used for security but cannot be changed if compromised. Deepfake technology can synthesize realistic voices from short audio samples, enabling fraud like voice phishing (vishing) and unauthorized access. The combination of voice and ID data in this breach makes it particularly dangerous because attackers can impersonate victims in real-time calls.
+**Background**: Large language models like GPT-3 are typically trained on diverse internet text spanning recent decades. Talkie diverges by using a carefully curated corpus of only historical texts, aiming to recreate the language model that would have existed in 1930 if the technology were available.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://app.oravys.com/blog/mercor-breach-2026">4TB of voice samples stolen from 40,000 AI contractors ... | ORAVYS</a></li>
-<li><a href="https://www.halborn.com/blog/post/explained-the-mercor-hack-april-2026">Explained: The Mercor Hack (April 2026)</a></li>
-<li><a href="https://www.bleepingcomputer.com/news/security/deepfake-voice-attacks-are-outpacing-defenses-what-security-leaders-should-know/">Deepfake Voice Attacks are Outpacing Defenses: What Security Leaders Should Know</a></li>
+**Discussion**: Comments highlight mixed reception: some find the historical outputs fascinating, while others note inaccuracies about technology and politics, suggesting the model relies on pre-1900 information. Alec Radford's involvement adds credibility.
 
-</ul>
-</details>
-
-**Discussion**: Commenters noted the irony of offering free voice verification to victims, which requires sending more voice data to another AI company. There was criticism of Mercor for tricking contractors and poor security, with calls for stronger consequences. Many emphasized that biometrics are 'forever passwords' and urged people to avoid sharing them.
-
-**Tags**: `#security breach`, `#AI`, `#biometrics`, `#deepfake`, `#privacy`
+**Tags**: `#language model`, `#vintage data`, `#historical AI`, `#machine learning`, `#NLP`
 
 ---
 
 <a id="item-3"></a>
-## [Interactive Color Perception Test Sparks Debate on Blue vs Green](https://ismy.blue/) ⭐️ 8.0/10
+## [Microsoft Releases Open-Source VibeVoice STT Model](https://simonwillison.net/2026/Apr/27/vibevoice/#atom-everything) ⭐️ 8.0/10
 
-An interactive web app at ismy.blue allows users to identify their personal boundary between blue and green, revealing surprising variations in individual color perception. This simple tool highlights the subjectivity of color perception and connects to broader discussions on linguistic relativity, showing that language and culture may influence how we categorize colors. The test presents a series of colors transitioning from blue to green, asking users to label each as either blue or green, and then estimates where their personal boundary lies compared to the population.
-
-hackernews · theogravity · Apr 27, 20:24
-
-**Background**: Color perception is not universal; languages vary in how they name colors, and research on linguistic relativity suggests that language can influence perception. For example, some languages have a single term for blue and green, while others distinguish them early.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Linguistic_relativity">Linguistic relativity</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Linguistic_relativity_and_the_color_naming_debate">Linguistic relativity and the color naming debate - Wikipedia</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Commenters expressed frustration that the forced binary choice between blue and green ignored intermediate colors like teal or turquoise. Others shared personal anecdotes about disagreements with partners, and some noted an anchoring effect in the test's adaptive algorithm.
-
-**Tags**: `#color perception`, `#psychology`, `#linguistics`, `#interactive`, `#Hacker News`
-
----
-
-<a id="item-4"></a>
-## [Microsoft releases VibeVoice: open-source speech-to-text with speaker diarization](https://simonwillison.net/2026/Apr/27/vibevoice/#atom-everything) ⭐️ 8.0/10
-
-Microsoft released VibeVoice on January 21, 2026, as an MIT-licensed speech-to-text model with built-in speaker diarization. The model can be easily run on Apple Silicon Macs using the mlx-audio library and a 4-bit quantized version (5.71 GB) available on Hugging Face. VibeVoice simplifies multi-speaker transcription by integrating speaker diarization directly into the model, eliminating the need for separate pipelines. Its open-source MIT license and easy deployment via mlx-audio lower the barrier for developers and researchers to build speech applications. The model supports up to 60 minutes of audio per inference, with a default max-tokens of 8192 (about 25 minutes) that can be increased. On a 128GB M5 Max MacBook Pro, processing one hour of audio takes about 8 minutes 45 seconds with peak memory usage between 30–61 GB.
+Microsoft released VibeVoice, an MIT-licensed Whisper-style audio model for speech-to-text with built-in speaker diarization, on January 21, 2026. The model can transcribe audio up to an hour and outputs JSON with speaker labels. VibeVoice combines speech-to-text and speaker diarization in a single open-source model, reducing the need for separate pipelines. Its MIT license encourages broad adoption for applications like podcast transcription and meeting analysis. VibeVoice can process up to 59 minutes of audio per run, with a default max-tokens of 8,192 (~25 minutes), and requires about 30–60GB of RAM. It achieves ~50 tokens/sec in prompt processing and ~38 tokens/sec in generation on an M5 Max MacBook Pro.
 
 rss · Simon Willison · Apr 27, 23:46
 
-**Background**: Speaker diarization is the task of partitioning an audio stream into segments according to who is speaking, answering 'who spoke when'. Traditional systems require separate models for speech recognition and diarization. MLX is Apple's machine learning framework for efficient inference on Apple Silicon, and mlx-audio is a community library providing audio processing pipelines built on MLX.
+**Background**: Speaker diarization is the task of partitioning an audio stream into segments labeled by speaker identity, answering 'who spoke when'. Whisper-style models are end-to-end speech recognition systems based on transformers, originally popularized by OpenAI's Whisper. VibeVoice extends this by integrating diarization directly into the model, whereas traditional approaches use separate systems.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Speaker_diarisation">Speaker diarisation</a></li>
-<li><a href="https://github.com/Blaizzy/mlx-audio">GitHub - Blaizzy/ mlx - audio : A text-to-speech (TTS), speech-to-text...</a></li>
+<li><a href="https://ml-explore.github.io/mlx/build/html/index.html">MLX — MLX 0.31.1 documentation</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#speech-to-text`, `#machine learning`, `#open source`, `#Microsoft`, `#speaker diarization`
+**Tags**: `#speech-to-text`, `#AI`, `#Microsoft`, `#open-source`, `#machine learning`
+
+---
+
+<a id="item-4"></a>
+## [Microsoft-OpenAI AGI Clause Officially Removed](https://simonwillison.net/2026/Apr/27/now-deceased-agi-clause/#atom-everything) ⭐️ 8.0/10
+
+The AGI clause that would void Microsoft's IP rights upon AGI achievement has been removed in the amended partnership agreement between Microsoft and OpenAI, announced on April 27, 2026. This removal fundamentally restructures one of the most influential AI partnerships, affecting IP rights, exclusivity, and incentives around AGI development. The clause originally defined AGI as systems capable of generating $100 billion in profits for early investors; later it required verification by an independent expert panel. With the removal, Microsoft loses exclusivity but retains IP rights until 2030 or AGI declaration, whichever is first.
+
+rss · Simon Willison · Apr 27, 18:38
+
+**Background**: The clause was part of the 2019 Microsoft-OpenAI partnership, designed to limit Microsoft's control if OpenAI achieved AGI. AGI (Artificial General Intelligence) refers to a hypothetical AI system that matches or surpasses human capabilities across virtually all cognitive tasks. The exact definition of AGI has been a point of contention, with the clause evolving from a simple milestone to a profit-based metric.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.theverge.com/ai-artificial-intelligence/918981/openai-microsoft-renegotiate-contract">Microsoft and OpenAI’s famed AGI agreement is dead</a></li>
+<li><a href="https://arstechnica.com/ai/2026/04/no-longer-exclusive-microsoft-agrees-to-let-openai-see-other-cloud-providers/">OpenAI ends its exclusive partnership with Microsoft - Ars ...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Artificial_general_intelligence">Artificial general intelligence - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AGI`, `#OpenAI`, `#Microsoft`, `#AI governance`, `#IP rights`
 
 ---
 
 <a id="item-5"></a>
-## [Talkie: 13B Language Model Trained on Pre-1931 Text](https://talkie-lm.com/introducing-talkie) ⭐️ 7.0/10
+## [Toronto SMS Blaster Arrests: 3 Men Face Charges](https://www.tps.ca/media-centre/stories/unprecedented-sms-blaster-arrests/) ⭐️ 7.0/10
 
-Researchers released Talkie, a 13-billion-parameter language model trained exclusively on 260 billion tokens of English text from before 1931, simulating the knowledge of a 1930s AI. Talkie offers a unique lens into historical knowledge and biases, but also reveals the challenges of enforcing strict data cutoffs; it sparks discussion about AI's relationship with time and historical accuracy. The model is available in base and instruction-tuned versions on Hugging Face, and notable contributors include Alec Radford, co-creator of GPT. Community testing shows it struggles with events like the Great Depression, indicating data leakage or imbalanced sources.
+Three men were arrested in Toronto for using SMS blasters to send phishing texts, marking what authorities call an unprecedented case in Canada. This case highlights vulnerabilities in telecom networks that allow SMS spoofing, and underscores the growing threat of phishing scams delivered via mobile devices. The SMS blaster devices could disrupt cellular network connections and potentially block calls to 911, and the suspects allegedly hijacked thousands of phones to send spam.
 
-hackernews · jekude · Apr 27, 21:55
+hackernews · gnabgib · Apr 27, 20:44
 
-**Background**: Vintage language models are trained on text from a specific historical period to simulate what an AI from that era would know. They require rigorous data filtering to prevent modern information from leaking in. Talkie uses a curated dataset of pre-1931 texts from sources like books, newspapers, and scientific journals.
+**Background**: SMS blasters are portable devices that mimic cell towers, exploiting weaknesses in the SS7 protocol to send fake SMS messages without carrier verification. This technique bypasses typical spam filters and allows scammers to spoof sender IDs. SS7 vulnerabilities have been known for years but remain largely unpatched in many networks.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://news.ycombinator.com/item?id=47927903">Talkie : a 13B vintage language model from 1930 | Hacker News</a></li>
+<li><a href="https://gizmodo.com/canadian-police-arrest-three-men-behind-sms-blaster-scam-that-allegedly-hijacked-thousands-of-phones-2000751386">Canadian Police Arrest Three Men Behind SMS Blaster Scam That ...</a></li>
+<li><a href="https://www.techradar.com/computing/cyber-security/new-sms-blaster-text-scams-are-on-the-rise-security-experts-warn-stay-safe-by-changing-this-one-phone-setting">New ‘SMS blaster’ text scams are on the rise, security ...</a></li>
+<li><a href="https://dailysecurityreview.com/cyber-security/application-security/ss7-alarm-tcap-tag-exploit-lets-attackers-intercept-sms-and-track-users/">SS7 Alarm: TCAP Tag Exploit Lets Attackers Intercept SMS and ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Comments highlight historical inaccuracies—the model seems more informed about 1900 than 1930, missing the Great Depression. There is excitement about Alec Radford's involvement, and some humor about the name.
+**Discussion**: Comments on the news highlight mixed reactions: some question the novelty of the devices, noting that law enforcement uses similar stingray technology. Others discuss how SS7 weaknesses enable such attacks and compare the situation to widespread SMS spam in Brazil, where many users rely solely on WhatsApp.
 
-**Tags**: `#language model`, `#AI`, `#vintage AI`, `#historical`, `#deep learning`
+**Tags**: `#cybersecurity`, `#SMS spam`, `#phishing`, `#telecom security`, `#law enforcement`
 
 ---
 
 <a id="item-6"></a>
-## [Three Men Charged in Toronto SMS Blaster Scam](https://www.tps.ca/media-centre/stories/unprecedented-sms-blaster-arrests/) ⭐️ 7.0/10
+## [Website reveals differences in color perception](https://ismy.blue/) ⭐️ 7.0/10
 
-Toronto police arrested three men for using SMS blasters—portable fake cell towers—to send spam and phishing messages to nearby phones. The charges mark the first such arrests in Canada. This case highlights the growing threat of SMS blasters, which bypass carrier filters and can be used for large-scale phishing attacks. It also raises concerns about phone security and trust in cellular networks. The devices, similar to stingrays used by law enforcement, impersonate legitimate cell towers and can intercept IMSI numbers. The suspects allegedly used them to send fraudulent messages mimicking banks and government agencies.
+A new interactive website called 'Is my blue your blue?' asks users to categorize colors as blue or green, revealing where each individual draws the boundary between these hues. This experiment highlights that color perception is subjective and varies significantly across individuals and cultures, challenging the assumption that everyone sees colors the same way. The site presents colors ranging from clearly blue to clearly green, and users must click 'blue' or 'green' for each; the results show the user's personal boundary relative to the population average.
 
-hackernews · gnabgib · Apr 27, 20:44
+hackernews · theogravity · Apr 27, 20:24
 
-**Background**: SMS blasters are portable devices that mimic cell towers, forcing nearby phones to connect to them. They can then inject spam or phishing texts that appear to come from legitimate numbers, bypassing carrier spam filters. This technology is a variant of IMSI-catchers, commonly known as stingrays, which have been used by law enforcement for surveillance.
+**Background**: Color perception is influenced by both biology and language; cultures differ in how they name and categorize colors, such as the Japanese word 'ao' covering both blue and green. The phenomenon of color boundary variation is a well-known topic in cognitive science and linguistics.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.techradar.com/computing/cyber-security/new-sms-blaster-text-scams-are-on-the-rise-security-experts-warn-stay-safe-by-changing-this-one-phone-setting">New ‘SMS blaster’ text scams are on the rise, security ...</a></li>
-<li><a href="https://www.kaspersky.com/blog/what-are-sms-blasters-and-how-to-protect-yourself/53810/">What an SMS blaster is, and how to protect yourself from ...</a></li>
-<li><a href="https://en.wikipedia.org/wiki/IMSI-catcher">IMSI-catcher - Wikipedia</a></li>
+**Discussion**: Commenters shared personal anecdotes about disagreements with others over color category, and some expressed frustration that the binary choice between blue and green did not allow for intermediate colors like turquoise or teal. Cultural differences, such as the Japanese 'blue' traffic light, were also noted.
 
-</ul>
-</details>
-
-**Discussion**: Commenters noted that such scams are common in Brazil, where spam leads people to use WhatsApp exclusively. Some questioned the media hype, pointing out that law enforcement uses similar devices legally. Others asked about the technical feasibility and lack of cryptographic verification in SMS.
-
-**Tags**: `#security`, `#SMS spam`, `#stingray`, `#phishing`, `#law enforcement`
+**Tags**: `#color perception`, `#cognitive science`, `#linguistics`, `#interactive experiment`, `#pop science`
 
 ---
 
 <a id="item-7"></a>
-## [Essay advocates staring at walls for mental downtime](https://www.alexselimov.com/posts/men_who_stare_at_walls/) ⭐️ 7.0/10
+## [Men Who Stare at Walls: The Lost Art of Disattention](https://www.alexselimov.com/posts/men_who_stare_at_walls/) ⭐️ 7.0/10
 
-An essay titled 'Men who stare at walls' argues that deliberately staring at a blank wall can help reclaim the mental downtime that smartphones have stolen. This piece resonates widely because it addresses the pervasive issue of constant digital stimulation eroding our ability to think without distractions, encouraging readers to prioritize mental stillness. The essay is a personal reflection rather than a scientific study, yet its high engagement (492 points, 219 comments) indicates strong cultural relevance and shared experience.
+The essay discusses the overlooked importance of letting the mind wander without digital distractions, coining the term 'disattention' to describe these unstructured moments of mental downtime. In a smartphone-saturated world, constant digital engagement robs people of crucial mental breaks that foster creativity, problem-solving, and emotional processing; reclaiming disattention could improve mental health and productivity. The article contrasts disattention with meditation, noting that while meditation is structured, disattention is spontaneous and unstructured; it highlights the instinct to fill every spare moment with doomscrolling as a hard habit to break.
 
 hackernews · aselimov3 · Apr 27, 11:08
 
-**Background**: In modern life, smartphones fill every spare moment with content, leaving little time for mind-wandering, which is crucial for creativity and mental processing. Staring at walls is a form of deliberate disattention that can replenish cognitive resources, similar to meditation but without formal technique.
+**Background**: Disattention refers to the natural state of letting the mind drift without focusing on a particular task, often occurring during mundane activities like staring at a wall or driving. In the modern attention economy, smartphones constantly demand attention, erasing these valuable mental pauses that allow subconscious processing.
 
-**Discussion**: Commenters largely agree with the essay, sharing personal anecdotes about reclaiming disattention through activities like staring at walls or driving. Some equate it to meditation, while others emphasize the loss of unstructured thinking time.
+**Discussion**: Commenters strongly agree with the essay, sharing personal anecdotes about losing disattention to smartphones. One user notes that smartphones steal not just attention but disattention itself; others compare it to meditation and emphasize the difficulty of resisting the urge to fill downtime with scrolling.
 
-**Tags**: `#attention`, `#digital habits`, `#mental health`, `#meditation`, `#technology impact`
+**Tags**: `#attention`, `#mindfulness`, `#smartphone addiction`, `#mental health`, `#productivity`
+
+---
+
+<a id="item-8"></a>
+## [Easyduino: Open Source KiCad Devboard Templates](https://github.com/Hanqaqa/Easyduino) ⭐️ 7.0/10
+
+Easyduino provides open-source KiCad PCB designs for Arduino and ESP32 devboards, serving as templates for learning and customization. This fills a gap for open-source hardware designs of popular devboards, enabling hobbyists and engineers to modify and learn from proven layouts. The repository includes KiCad project files for boards like Arduino Uno and ESP32 DevKit, allowing users to easily adapt designs.
+
+hackernews · Hanqaqa · Apr 27, 17:45
+
+**Background**: KiCad is a free and open-source electronic design automation (EDA) tool for schematic capture and PCB layout. Arduino and ESP32 devboards are widely used in prototyping, but their official PCB designs are often proprietary or not easily editable. Easyduino offers open-source KiCad templates that replicate these boards, enabling customization and learning.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.kicad.org/">KiCad - Schematic Capture & PCB Design Software</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Commenters praised Easyduino for filling a learning gap, with one user noting it helps overcome 'unknown unknowns' in ESP32 PCB design. Another shared that creating their own Arduino UNO PCB improved their understanding of routing practices.
+
+**Tags**: `#PCB design`, `#KiCad`, `#Arduino`, `#ESP32`, `#open source hardware`
 
 ---
