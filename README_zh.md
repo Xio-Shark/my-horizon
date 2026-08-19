@@ -1,3 +1,5 @@
+> **说明：** 本仓库是 [Thysrael/Horizon](https://github.com/Thysrael/Horizon) 的非官方个人学习复刻，**与原作者无任何隶属或代言关系**。请以 upstream 为准。
+
 <div align="center">
 
 # 🌅 Horizon
