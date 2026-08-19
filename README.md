@@ -1,3 +1,5 @@
+> **Notice:** This repository is an unofficial personal study fork of [Thysrael/Horizon](https://github.com/Thysrael/Horizon). It is **not affiliated with**, maintained by, or endorsed by the original author. Please use the upstream project.
+
 <div align="center">
 
 # 🌅 Horizon
